@@ -1,36 +1,39 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 .pie {
-    --w: 250px;
-    width: var(--w);
-    aspect-ratio: 1;
-    display: inline-grid;
-    place-content: center;
-    margin: 5px;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: sans-serif;
-    background-color: white;
-    position: relative;
-    box-shadow:  1px 1px 10px black;
-    border-radius: 50%;
-  }
-  .pie:before{
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    inset: 0;
-    background: conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
-  }
-  .pie:after{
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    inset: 10px;
-    background: #fff;
-    box-shadow: inset 1px 1px 10px black;
-  }
+  --w: 250px;
+  width: var(--w);
+  aspect-ratio: 1;
+  display: inline-grid;
+  place-content: center;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: white;
+  position: relative;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 50%;
+}
+
+.pie:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+}
+
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 10px;
+  background: #fff;
+  box-shadow: inset 1px 1px 10px black;
+}
